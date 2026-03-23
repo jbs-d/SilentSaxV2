@@ -19,13 +19,16 @@ What is already implemented:
 - Router/tab navigation works
 - Tabs include Home, Explore, and Upload
 - Upload tab exists
-- Basic image picker works
-- User can select an image from the library
+- Image picker works
+- Camera capture works
+- Selected image can be displayed
+- Placeholder recognition service exists
+- Parsed notes are displayed in the UI
+- Parsing shows a loading state
 
 What is not implemented yet:
-- Camera capture in the app
 - Real note recognition from uploaded sheet music
-- Multi-note extraction from one image
+- Multi-note recognition based on actual image content
 - Transposition service
 - Fingering mapping pipeline
 - Visual saxophone fingering model
@@ -35,7 +38,7 @@ What is not implemented yet:
 Current product quality:
 - The app still feels like a prototype
 - UI is functional but not yet polished
-- Parsing is not yet real or reliable
+- Recognition is still placeholder-based
 - Core music-learning flow is not complete
 
 Known constraints:
