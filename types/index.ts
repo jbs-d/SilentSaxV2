@@ -23,6 +23,23 @@ export interface ParsedNote extends MusicalNote {
 }
 
 // ============================================
+// Sheet Music Context
+// ============================================
+
+/**
+ * Describes what instrument (or pitch standard) the uploaded sheet music
+ * is written for. This determines how written notes relate to concert pitch.
+ *
+ *   concert — no transposition; written note = sounding pitch
+ *   alto    — sheet is written for Alto Sax (Eb); concert = written − 9 semitones
+ *   tenor   — sheet is written for Tenor Sax (Bb); concert = written − 14 semitones
+ *
+ * MVP default: treat uploaded sheet music as written notation ('concert' for
+ * generic scores, or the specific sax type if the part is already transposed).
+ */
+export type SheetMusicContext = 'concert' | 'alto' | 'tenor';
+
+// ============================================
 // Saxophone Types
 // ============================================
 

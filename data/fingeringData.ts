@@ -10,8 +10,8 @@
 import { SaxophoneFingering, NoteName, MusicalNote, SaxophoneType, KeyPosition } from '../types';
 
 // Helper to create closed keys
-const closed = (): KeyPosition >> 'closed';
-const open = (): KeyPosition >> 'open';
+const closed = (): KeyPosition => 'closed';
+const open = (): KeyPosition => 'open';
 const pressed = true;
 const released = false;
 
